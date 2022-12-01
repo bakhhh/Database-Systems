@@ -1,0 +1,513 @@
+mysql> show database;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'database' at line 1
+mysql> show databases;
++-----------------------+
+| Database              |
++-----------------------+
+| information_schema    |
+| IPL_Database_20605126 |
+| dswork                |
+| koha_library          |
+| mysql                 |
+| performance_schema    |
+| sys                   |
++-----------------------+
+7 rows in set (0.00 sec)
+
+mysql> use IPL_Database_20605126;
+Database changed
+mysql> source assignment_commands_20605126.sql
+Query OK, 0 rows affected, 1 warning (0.00 sec)
+
+Query OK, 0 rows affected (0.05 sec)
+
+Query OK, 0 rows affected, 1 warning (0.00 sec)
+
+Query OK, 0 rows affected (0.03 sec)
+
+Query OK, 0 rows affected, 1 warning (0.00 sec)
+
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FOREIGN KEY(teamName) REFERENCES Team(teamName)
+)' at line 9
+Query OK, 0 rows affected, 1 warning (0.00 sec)
+
+ERROR 1215 (HY000): Cannot add foreign key constraint
+Query OK, 0 rows affected, 1 warning (0.00 sec)
+
+ERROR 1215 (HY000): Cannot add foreign key constraint
+Query OK, 0 rows affected, 1 warning (0.00 sec)
+
+ERROR 1072 (42000): Key column 'countryName' doesn't exist in table
+Query OK, 0 rows affected, 1 warning (0.00 sec)
+
+Query OK, 0 rows affected (0.04 sec)
+
+Query OK, 0 rows affected, 1 warning (0.00 sec)
+
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FOREIGN KEY(cityName) REFERENCES City(cityName),
+)' at line 5
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Match' at line 1
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Match(
+	matchID char(6) NOT NULL,
+	matchDate DATE,
+	team1 varchar(16),
+	team2 va' at line 1
+Query OK, 0 rows affected, 1 warning (0.00 sec)
+
+Query OK, 0 rows affected (0.04 sec)
+
+Query OK, 0 rows affected, 1 warning (0.00 sec)
+
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Match(matchID),
+
+)' at line 8
+mysql> 
+mysql> source assignment_commands_20605126.sql
+Query OK, 0 rows affected (0.02 sec)
+
+Query OK, 0 rows affected (0.03 sec)
+
+ERROR 1217 (23000): Cannot delete or update a parent row: a foreign key constraint fails
+ERROR 1050 (42S01): Table 'Country' already exists
+Query OK, 0 rows affected, 1 warning (0.00 sec)
+
+Query OK, 0 rows affected (0.05 sec)
+
+Query OK, 0 rows affected, 1 warning (0.00 sec)
+
+Query OK, 0 rows affected (0.04 sec)
+
+Query OK, 0 rows affected, 1 warning (0.00 sec)
+
+ERROR 1050 (42S01): Table 'Batsman' already exists
+Query OK, 0 rows affected, 1 warning (0.00 sec)
+
+ERROR 1072 (42000): Key column 'countryName' doesn't exist in table
+Query OK, 0 rows affected (0.02 sec)
+
+Query OK, 0 rows affected (0.04 sec)
+
+Query OK, 0 rows affected, 1 warning (0.00 sec)
+
+Query OK, 0 rows affected (0.04 sec)
+
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Match' at line 1
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Match(
+	matchID char(6) NOT NULL,
+	matchDate DATE,
+	team1 varchar(16),
+	team2 va' at line 1
+Query OK, 0 rows affected (0.01 sec)
+
+Query OK, 0 rows affected (0.04 sec)
+
+Query OK, 0 rows affected, 1 warning (0.00 sec)
+
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Match(matchID)
+
+)' at line 8
+mysql> source assignment_commands_20605126.sql
+ERROR 1007 (HY000): Can't create database 'IPL_Database_20605126'; database exists
+Database changed
+ERROR 1217 (23000): Cannot delete or update a parent row: a foreign key constraint fails
+ERROR 1050 (42S01): Table 'Team' already exists
+ERROR 1217 (23000): Cannot delete or update a parent row: a foreign key constraint fails
+ERROR 1050 (42S01): Table 'Country' already exists
+ERROR 1217 (23000): Cannot delete or update a parent row: a foreign key constraint fails
+ERROR 1050 (42S01): Table 'Player' already exists
+Query OK, 0 rows affected (0.02 sec)
+
+Query OK, 0 rows affected (0.05 sec)
+
+Query OK, 0 rows affected, 1 warning (0.00 sec)
+
+ERROR 1050 (42S01): Table 'Batsman' already exists
+Query OK, 0 rows affected, 1 warning (0.00 sec)
+
+ERROR 1072 (42000): Key column 'countryName' doesn't exist in table
+ERROR 1217 (23000): Cannot delete or update a parent row: a foreign key constraint fails
+ERROR 1050 (42S01): Table 'City' already exists
+Query OK, 0 rows affected (0.01 sec)
+
+Query OK, 0 rows affected (0.04 sec)
+
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Match' at line 1
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Match(
+	matchID char(6) NOT NULL,
+	matchDate DATE,
+	team1 varchar(16),
+	team2 va' at line 1
+Query OK, 0 rows affected (0.02 sec)
+
+Query OK, 0 rows affected (0.04 sec)
+
+Query OK, 0 rows affected, 1 warning (0.00 sec)
+
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Match(matchID) ON DELETE CASCADE
+
+)' at line 8
+mysql> source assignment_commands_20605126.sql
+ERROR 1217 (23000): Cannot delete or update a parent row: a foreign key constraint fails
+ERROR 1050 (42S01): Table 'Team' already exists
+ERROR 1217 (23000): Cannot delete or update a parent row: a foreign key constraint fails
+ERROR 1050 (42S01): Table 'Country' already exists
+ERROR 1217 (23000): Cannot delete or update a parent row: a foreign key constraint fails
+ERROR 1050 (42S01): Table 'Player' already exists
+Query OK, 0 rows affected (0.02 sec)
+
+Query OK, 0 rows affected (0.07 sec)
+
+Query OK, 0 rows affected, 1 warning (0.00 sec)
+
+ERROR 1050 (42S01): Table 'Batsman' already exists
+Query OK, 0 rows affected, 1 warning (0.00 sec)
+
+ERROR 1072 (42000): Key column 'countryName' doesn't exist in table
+ERROR 1217 (23000): Cannot delete or update a parent row: a foreign key constraint fails
+ERROR 1050 (42S01): Table 'City' already exists
+Query OK, 0 rows affected (0.02 sec)
+
+Query OK, 0 rows affected (0.03 sec)
+
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Match' at line 1
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Match(
+	matchID char(6) NOT NULL,
+	matchDate DATE,
+	team1 varchar(16),
+	team2 va' at line 1
+Query OK, 0 rows affected (0.02 sec)
+
+Query OK, 0 rows affected (0.05 sec)
+
+Query OK, 0 rows affected, 1 warning (0.00 sec)
+
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Match(matchID) ON DELETE CASCADE
+
+)' at line 8
+mysql> DROP TABLE IF EXISTS Team;
+ERROR 1217 (23000): Cannot delete or update a parent row: a foreign key constraint fails
+mysql> CREATE TABLE Team(
+    -> teamName varchar(16) NOT NULL,
+    -> PRIMARY KEY(teamName)
+    -> );
+ERROR 1050 (42S01): Table 'Team' already exists
+mysql> show tables;
++---------------------------------+
+| Tables_in_IPL_Database_20605126 |
++---------------------------------+
+| Batsman                         |
+| City                            |
+| Country                         |
+| Player                          |
+| Team                            |
+| Umpire                          |
+| Venue                           |
++---------------------------------+
+7 rows in set (0.00 sec)
+
+mysql> DROP TABLE IF EXISTS Team;
+ERROR 1217 (23000): Cannot delete or update a parent row: a foreign key constraint fails
+mysql> source createTeam;
+ERROR: 
+Failed to open file 'createTeam', error: 2
+mysql> source createTeam.sql;
+ERROR 1217 (23000): Cannot delete or update a parent row: a foreign key constraint fails
+ERROR 1050 (42S01): Table 'Team' already exists
+mysql> source createPlayer.sql
+ERROR 1217 (23000): Cannot delete or update a parent row: a foreign key constraint fails
+ERROR 1050 (42S01): Table 'Player' already exists
+mysql> DROP Table Venue;
+Query OK, 0 rows affected (0.03 sec)
+
+mysql> DROP Table Umpire;
+Query OK, 0 rows affected (0.02 sec)
+
+mysql> DROP Table Team;
+ERROR 1217 (23000): Cannot delete or update a parent row: a foreign key constraint fails
+mysql> DROP Table Player;
+ERROR 1217 (23000): Cannot delete or update a parent row: a foreign key constraint fails
+mysql> DROP Table Batsman;
+Query OK, 0 rows affected (0.02 sec)
+
+mysql> DROP Table City;
+Query OK, 0 rows affected (0.02 sec)
+
+mysql> DROP Table Team;
+ERROR 1217 (23000): Cannot delete or update a parent row: a foreign key constraint fails
+mysql> show tables;
++---------------------------------+
+| Tables_in_IPL_Database_20605126 |
++---------------------------------+
+| Country                         |
+| Player                          |
+| Team                            |
++---------------------------------+
+3 rows in set (0.00 sec)
+
+mysql> DROP Table Player;
+Query OK, 0 rows affected (0.02 sec)
+
+mysql> DROP Table Team;
+Query OK, 0 rows affected (0.01 sec)
+
+mysql> DROP Table Country;
+Query OK, 0 rows affected (0.02 sec)
+
+mysql> source buildTables.sql;
+ERROR: 
+Failed to open file 'createTable.sql', error: 2
+Query OK, 0 rows affected, 1 warning (0.00 sec)
+
+Query OK, 0 rows affected (0.12 sec)
+
+Query OK, 0 rows affected, 1 warning (0.00 sec)
+
+ERROR 1215 (HY000): Cannot add foreign key constraint
+Query OK, 0 rows affected, 1 warning (0.00 sec)
+
+ERROR 1215 (HY000): Cannot add foreign key constraint
+Query OK, 0 rows affected, 1 warning (0.00 sec)
+
+ERROR 1215 (HY000): Cannot add foreign key constraint
+Query OK, 0 rows affected, 1 warning (0.00 sec)
+
+ERROR 1072 (42000): Key column 'countryName' doesn't exist in table
+Query OK, 0 rows affected, 1 warning (0.00 sec)
+
+Query OK, 0 rows affected (0.04 sec)
+
+Query OK, 0 rows affected, 1 warning (0.00 sec)
+
+Query OK, 0 rows affected (0.04 sec)
+
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Match' at line 1
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Match(
+	matchID char(6) NOT NULL,
+	matchDate DATE,
+	team1 varchar(16),
+	team2 va' at line 1
+Query OK, 0 rows affected, 1 warning (0.00 sec)
+
+Query OK, 0 rows affected (0.06 sec)
+
+Query OK, 0 rows affected, 1 warning (0.00 sec)
+
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Match(matchID) ON DELETE CASCADE
+
+)' at line 8
+mysql> source buildTables.sql;
+ERROR: 
+Failed to open file 'createTeams.sql', error: 2
+ERROR 1217 (23000): Cannot delete or update a parent row: a foreign key constraint fails
+ERROR 1050 (42S01): Table 'Country' already exists
+Query OK, 0 rows affected, 1 warning (0.00 sec)
+
+ERROR 1215 (HY000): Cannot add foreign key constraint
+Query OK, 0 rows affected, 1 warning (0.00 sec)
+
+ERROR 1215 (HY000): Cannot add foreign key constraint
+Query OK, 0 rows affected, 1 warning (0.00 sec)
+
+ERROR 1215 (HY000): Cannot add foreign key constraint
+Query OK, 0 rows affected, 1 warning (0.00 sec)
+
+ERROR 1072 (42000): Key column 'countryName' doesn't exist in table
+ERROR 1217 (23000): Cannot delete or update a parent row: a foreign key constraint fails
+ERROR 1050 (42S01): Table 'City' already exists
+Query OK, 0 rows affected (0.02 sec)
+
+Query OK, 0 rows affected (0.05 sec)
+
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Match' at line 1
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Match(
+	matchID char(6) NOT NULL,
+	matchDate DATE,
+	team1 varchar(16),
+	team2 va' at line 1
+Query OK, 0 rows affected (0.01 sec)
+
+Query OK, 0 rows affected (0.05 sec)
+
+Query OK, 0 rows affected, 1 warning (0.00 sec)
+
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Match(matchID) ON DELETE CASCADE
+
+)' at line 8
+mysql> show tables;
++---------------------------------+
+| Tables_in_IPL_Database_20605126 |
++---------------------------------+
+| City                            |
+| Country                         |
+| Umpire                          |
+| Venue                           |
++---------------------------------+
+4 rows in set (0.00 sec)
+
+mysql> source buildTables.sql;
+Query OK, 0 rows affected (0.02 sec)
+
+Query OK, 0 rows affected (0.02 sec)
+
+Query OK, 0 rows affected, 1 warning (0.00 sec)
+
+Query OK, 0 rows affected (0.03 sec)
+
+Query OK, 0 rows affected, 1 warning (0.00 sec)
+
+Query OK, 0 rows affected, 1 warning (0.00 sec)
+
+Query OK, 0 rows affected (0.03 sec)
+
+ERROR: 
+Failed to open file 'createTeams.sql', error: 2
+Query OK, 0 rows affected, 1 warning (0.00 sec)
+
+Query OK, 0 rows affected (0.05 sec)
+
+Query OK, 0 rows affected, 1 warning (0.00 sec)
+
+ERROR 1215 (HY000): Cannot add foreign key constraint
+Query OK, 0 rows affected, 1 warning (0.00 sec)
+
+ERROR 1215 (HY000): Cannot add foreign key constraint
+Query OK, 0 rows affected, 1 warning (0.00 sec)
+
+ERROR 1215 (HY000): Cannot add foreign key constraint
+Query OK, 0 rows affected, 1 warning (0.01 sec)
+
+ERROR 1072 (42000): Key column 'countryName' doesn't exist in table
+Query OK, 0 rows affected, 1 warning (0.00 sec)
+
+Query OK, 0 rows affected (0.12 sec)
+
+Query OK, 0 rows affected, 1 warning (0.00 sec)
+
+Query OK, 0 rows affected (0.06 sec)
+
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Match' at line 1
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Match(
+	matchID char(6) NOT NULL,
+	matchDate DATE,
+	team1 varchar(16),
+	team2 va' at line 1
+Query OK, 0 rows affected, 1 warning (0.00 sec)
+
+Query OK, 0 rows affected (0.06 sec)
+
+Query OK, 0 rows affected, 1 warning (0.00 sec)
+
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Match(matchID) ON DELETE CASCADE
+
+)' at line 8
+mysql> show tables;
++---------------------------------+
+| Tables_in_IPL_Database_20605126 |
++---------------------------------+
+| City                            |
+| Country                         |
+| Umpire                          |
+| Venue                           |
++---------------------------------+
+4 rows in set (0.00 sec)
+
+mysql> show tables;DROP Table IF EXISTS Venue;
++---------------------------------+
+| Tables_in_IPL_Database_20605126 |
++---------------------------------+
+| City                            |
+| Country                         |
+| Umpire                          |
+| Venue                           |
++---------------------------------+
+4 rows in set (0.00 sec)
+
+Query OK, 0 rows affected (0.02 sec)
+
+mysql> DROP Table IF EXISTS Umpire;
+Query OK, 0 rows affected (0.02 sec)
+
+mysql> DROP Table IF EXISTS Batsman;
+Query OK, 0 rows affected, 1 warning (0.00 sec)
+
+mysql> DROP Table IF EXISTS City;
+Query OK, 0 rows affected (0.03 sec)
+
+mysql> DROP Table IF EXISTS Player;
+Query OK, 0 rows affected, 1 warning (0.00 sec)
+
+mysql> DROP Table IF EXISTS Team;
+Query OK, 0 rows affected, 1 warning (0.00 sec)
+
+mysql> show tables;
++---------------------------------+
+| Tables_in_IPL_Database_20605126 |
++---------------------------------+
+| Country                         |
++---------------------------------+
+1 row in set (0.00 sec)
+
+mysql> DROP Table IF EXISTS Country;
+Query OK, 0 rows affected (0.02 sec)
+
+mysql> show tables;
+Empty set (0.00 sec)
+
+mysql> source buildTables.sql;
+Query OK, 0 rows affected, 1 warning (0.00 sec)
+
+Query OK, 0 rows affected, 1 warning (0.00 sec)
+
+Query OK, 0 rows affected, 1 warning (0.00 sec)
+
+Query OK, 0 rows affected, 1 warning (0.00 sec)
+
+Query OK, 0 rows affected, 1 warning (0.00 sec)
+
+Query OK, 0 rows affected, 1 warning (0.00 sec)
+
+Query OK, 0 rows affected, 1 warning (0.00 sec)
+
+ERROR: 
+Failed to open file 'createTeams.sql', error: 2
+Query OK, 0 rows affected, 1 warning (0.00 sec)
+
+Query OK, 0 rows affected (0.05 sec)
+
+Query OK, 0 rows affected, 1 warning (0.01 sec)
+
+ERROR 1215 (HY000): Cannot add foreign key constraint
+Query OK, 0 rows affected, 1 warning (0.00 sec)
+
+ERROR 1215 (HY000): Cannot add foreign key constraint
+Query OK, 0 rows affected, 1 warning (0.00 sec)
+
+ERROR 1215 (HY000): Cannot add foreign key constraint
+Query OK, 0 rows affected, 1 warning (0.00 sec)
+
+ERROR 1072 (42000): Key column 'countryName' doesn't exist in table
+Query OK, 0 rows affected, 1 warning (0.00 sec)
+
+Query OK, 0 rows affected (0.06 sec)
+
+Query OK, 0 rows affected, 1 warning (0.00 sec)
+
+Query OK, 0 rows affected (0.04 sec)
+
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Match' at line 1
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Match(
+	matchID char(6) NOT NULL,
+	matchDate DATE,
+	team1 varchar(16),
+	team2 va' at line 1
+Query OK, 0 rows affected, 1 warning (0.00 sec)
+
+Query OK, 0 rows affected (0.06 sec)
+
+Query OK, 0 rows affected, 1 warning (0.00 sec)
+
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Match(matchID) ON DELETE CASCADE
+
+)' at line 8
+mysql> Terminal close -- exit!
+Aborted
