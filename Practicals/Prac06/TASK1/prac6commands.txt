@@ -1,0 +1,32 @@
+#TASK1
+#1
+SELECT deptname FROM Dept d JOIN (SELECT deptno FROM Proj) p ON d.deptno = p.deptno GROUP BY deptname; 
+#2
+SELECT projname, prstdate, TIMESTAMPDIFF(MONTH,prstdate,prendate) AS DURATION FROM Proj p WHERE TIMESTAMPDIFF(MONTH,prstdate,prendate)< ALL(SELECT TIMESTAMPDIFF(MONTH,prstdate,prendate)  FROM Proj WHERE prendate < p.prendate);
+
+#3
+
+SELECT empno, firstname,lastname, gender FROM Emp e WHERE edlevel> (SELECT AVG(edlevel) FROM Emp WHERE gender = 'F' and e.gender = gender);
+
+#4
+
+SELECT lastname,job,salary FROM Emp e WHERE empno NOT IN (SELECT empno FROM Pworks WHERE empno = e.empno);
+
+#5
+
+SELECT firstname, lastname, edlevel FROM Emp e WHERE edlevel > ALL(SELECT edlevel FROM Emp WHERE job ='Designer');
+
+#6
+SELECT deptname FROM Dept d WHERE EXISTS(SELECT COUNT(deptno) FROM Proj WHERE d.deptno = deptno GROUP BY deptno HAVING COUNT(deptno) =1);
+
+#7
+
+SELECT projno, projname,prendate,'not sub project' AS remark from Proj  where majproj is NULL  UNION (SELECT projno,projname,prendate,'sub project' AS remark from Proj where majproj is not NULL) order by prendate; 
+
+
+
+
+
+
+
+

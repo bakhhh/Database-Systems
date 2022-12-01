@@ -1,0 +1,52 @@
+#Task2
+SOURCE createdept.sql
+SOURCE createemp.sql
+SOURCE createproj.sql
+SOURCE createpworks.sql
+SOURCE insdept.sql
+SOURCE insemp.sql
+SOURCE insproj.sql
+SOURCE inspworks.sql
+
+#Task3
+#1
+SELECT Emp.lastname, Emp.job, Emp.salary, Proj.projname AS Results FROM Emp INNER JOIN Proj ON Proj.projname LIKE '%Design%';
+
+#2
+
+SELECT firstname, lastname, job, deptno AS ManagerDeptNo, deptname FROM Emp INNER JOIN Dept ON empno = mgrno AND job='Manager';
+
+#3
+SELECT deptno, deptname, firstname, lastname, job FROM Emp INNER JOIN Dept ON job='Manager';
+
+#4
+SELECT E1.lastname,E1.job,E1.edlevel FROM Emp AS E1 INNER JOIN Emp AS E2 ON E2.job = 'pres' and E1.edlevel >= E2.edlevel;
+
+#5
+SELECT workdept, MIN(salary) AS MinSalary, MAX(salary) AS MaxSalary, COUNT(workdept) AS NumOfEmp FROM Emp GROUP BY workdept;
+
+#6
+
+SELECT workdept,COUNT(workdept) AS TotalEmployees FROM Emp GROUP BY workdept HAVING  COUNT(workdept) > 5;
+
+#7
+
+SELECT E.empno, E.lastname,E.salary,SUM(P.hours) AS TotalHrs FROM Emp AS E INNER JOIN Pworks AS P On E.empno = P.empno GROUP by E.empno ; 
+
+#8
+SELECT E.empno, E.lastname,E.salary,SUM(P.hours) AS TotalHrs, COUNT(P.empno) AS ProjCount FROM Emp AS E LEFT OUTER JOIN Pworks AS P On E.empno = P.empno GROUP by E.empno ; 
+ 
+#9
+SELECT E.empno, E.lastname,E.salary,SUM(P.hours) AS TotalHrs, COUNT(P.empno) AS ProjCount FROM Emp AS E LEFT OUTER JOIN Pworks AS P On E.empno = P.empno GROUP by E.empno ORDER by SUM(P.hours); 
+
+#10
+
+
+SELECT p1.projno AS ProjectNumber, p1.projname AS ProjectName, p2.majproj AS SubProjectNumber from Proj p1 inner join Proj p2 on p1.projno = p2.majproj ;
+
+#11
+
+SELECT p.projno, p.projname, p2.projno AS SubProjectNo, p2.projname AS SubProjectName FROM Proj p INNER JOIN Proj p2 ON p.projno = p2.majproj WHERE p2.majproj IS NOT NULL;
+
+
+

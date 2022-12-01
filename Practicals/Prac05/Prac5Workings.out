@@ -1,0 +1,1257 @@
+mysql> SOURCE Prac05Commands.txt
+Query OK, 0 rows affected, 1 warning (0.00 sec)
+
+Query OK, 0 rows affected (0.02 sec)
+
+Query OK, 0 rows affected, 1 warning (0.00 sec)
+
+Query OK, 0 rows affected (0.02 sec)
+
+Query OK, 0 rows affected, 1 warning (0.00 sec)
+
+Query OK, 0 rows affected (0.02 sec)
+
+Query OK, 0 rows affected, 1 warning (0.00 sec)
+
+Query OK, 0 rows affected (0.02 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
++-----------+------------+-----------+--------------------+
+| lastname  | job        | salary    | projname           |
++-----------+------------+-----------+--------------------+
+| Haas      | Pres       | 312750.00 | W L Program Design |
+| Haas      | Pres       | 312750.00 | W L Robot Design   |
+| Thompson  | Manager    | 161250.00 | W L Program Design |
+| Thompson  | Manager    | 161250.00 | W L Robot Design   |
+| Kwan      | Manager    | 158250.00 | W L Program Design |
+| Kwan      | Manager    | 158250.00 | W L Robot Design   |
+| Geyer     | Manager    | 160175.00 | W L Program Design |
+| Geyer     | Manager    | 160175.00 | W L Robot Design   |
+| Stern     | Manager    | 155555.00 | W L Program Design |
+| Stern     | Manager    | 155555.00 | W L Robot Design   |
+| Pulaski   | Manager    | 156170.00 | W L Program Design |
+| Pulaski   | Manager    | 156170.00 | W L Robot Design   |
+| Henderson | Manager    | 149750.00 | W L Program Design |
+| Henderson | Manager    | 149750.00 | W L Robot Design   |
+| Spenser   | Manager    | 146150.00 | W L Program Design |
+| Spenser   | Manager    | 146150.00 | W L Robot Design   |
+| Lucchesi  | Salesrep   | 156500.00 | W L Program Design |
+| Lucchesi  | Salesrep   | 156500.00 | W L Robot Design   |
+| Oconnell  | Programmer |  99250.00 | W L Program Design |
+| Oconnell  | Programmer |  99250.00 | W L Robot Design   |
+| Quintana  | Analyst    |  93800.00 | W L Program Design |
+| Quintana  | Analyst    |  93800.00 | W L Robot Design   |
+| Nicholls  | Analyst    |  88420.00 | W L Program Design |
+| Nicholls  | Analyst    |  88420.00 | W L Robot Design   |
+| Adamson   | Designer   |  95280.00 | W L Program Design |
+| Adamson   | Designer   |  95280.00 | W L Robot Design   |
+| Pianka    | Designer   |  92250.00 | W L Program Design |
+| Pianka    | Designer   |  92250.00 | W L Robot Design   |
+| Yoshimura | Designer   |  84680.00 | W L Program Design |
+| Yoshimura | Designer   |  84680.00 | W L Robot Design   |
+| Scoutten  | Designer   |  81340.00 | W L Program Design |
+| Scoutten  | Designer   |  81340.00 | W L Robot Design   |
+| Walker    | Designer   |  70450.00 | W L Program Design |
+| Walker    | Designer   |  70450.00 | W L Robot Design   |
+| Brown     | Designer   |  77740.00 | W L Program Design |
+| Brown     | Designer   |  77740.00 | W L Robot Design   |
+| Jones     | Designer   |  88270.00 | W L Program Design |
+| Jones     | Designer   |  88270.00 | W L Robot Design   |
+| Lutz      | Designer   |  89840.00 | W L Program Design |
+| Lutz      | Designer   |  89840.00 | W L Robot Design   |
+| Jefferson | Programmer |  62180.00 | W L Program Design |
+| Jefferson | Programmer |  62180.00 | W L Robot Design   |
+| Marino    | Programmer |  68760.00 | W L Program Design |
+| Marino    | Programmer |  68760.00 | W L Robot Design   |
+| Smith     | Programmer |  59180.00 | W L Program Design |
+| Smith     | Programmer |  59180.00 | W L Robot Design   |
+| Johnson   | Programmer |  57250.00 | W L Program Design |
+| Johnson   | Programmer |  57250.00 | W L Robot Design   |
+| Perez     | Programmer |  57380.00 | W L Program Design |
+| Perez     | Programmer |  57380.00 | W L Robot Design   |
+| Schneider | Operator   |  86250.00 | W L Program Design |
+| Schneider | Operator   |  86250.00 | W L Robot Design   |
+| Parker    | Operator   |  75340.00 | W L Program Design |
+| Parker    | Operator   |  75340.00 | W L Robot Design   |
+| Smith     | Operator   |  77750.00 | W L Program Design |
+| Smith     | Operator   |  77750.00 | W L Robot Design   |
+| Setright  | Operator   |  75900.00 | W L Program Design |
+| Setright  | Operator   |  75900.00 | W L Robot Design   |
+| Mehta     | Fieldrep   |  99950.00 | W L Program Design |
+| Mehta     | Fieldrep   |  99950.00 | W L Robot Design   |
+| Lee       | Fieldrep   |  95370.00 | W L Program Design |
+| Lee       | Fieldrep   |  95370.00 | W L Robot Design   |
+| Gounot    | Fieldrep   | 123840.00 | W L Program Design |
+| Gounot    | Fieldrep   | 123840.00 | W L Robot Design   |
++-----------+------------+-----------+--------------------+
+64 rows in set (0.00 sec)
+
+mysql> SELECT Emp.lastname, Emp.job, Emp.salary, Proj.projname AS Results FROM Emp INNER JOIN Proj ON Proj.projname LIKE '%Design%';
++-----------+------------+-----------+--------------------+
+| lastname  | job        | salary    | Results            |
++-----------+------------+-----------+--------------------+
+| Haas      | Pres       | 312750.00 | W L Program Design |
+| Haas      | Pres       | 312750.00 | W L Robot Design   |
+| Thompson  | Manager    | 161250.00 | W L Program Design |
+| Thompson  | Manager    | 161250.00 | W L Robot Design   |
+| Kwan      | Manager    | 158250.00 | W L Program Design |
+| Kwan      | Manager    | 158250.00 | W L Robot Design   |
+| Geyer     | Manager    | 160175.00 | W L Program Design |
+| Geyer     | Manager    | 160175.00 | W L Robot Design   |
+| Stern     | Manager    | 155555.00 | W L Program Design |
+| Stern     | Manager    | 155555.00 | W L Robot Design   |
+| Pulaski   | Manager    | 156170.00 | W L Program Design |
+| Pulaski   | Manager    | 156170.00 | W L Robot Design   |
+| Henderson | Manager    | 149750.00 | W L Program Design |
+| Henderson | Manager    | 149750.00 | W L Robot Design   |
+| Spenser   | Manager    | 146150.00 | W L Program Design |
+| Spenser   | Manager    | 146150.00 | W L Robot Design   |
+| Lucchesi  | Salesrep   | 156500.00 | W L Program Design |
+| Lucchesi  | Salesrep   | 156500.00 | W L Robot Design   |
+| Oconnell  | Programmer |  99250.00 | W L Program Design |
+| Oconnell  | Programmer |  99250.00 | W L Robot Design   |
+| Quintana  | Analyst    |  93800.00 | W L Program Design |
+| Quintana  | Analyst    |  93800.00 | W L Robot Design   |
+| Nicholls  | Analyst    |  88420.00 | W L Program Design |
+| Nicholls  | Analyst    |  88420.00 | W L Robot Design   |
+| Adamson   | Designer   |  95280.00 | W L Program Design |
+| Adamson   | Designer   |  95280.00 | W L Robot Design   |
+| Pianka    | Designer   |  92250.00 | W L Program Design |
+| Pianka    | Designer   |  92250.00 | W L Robot Design   |
+| Yoshimura | Designer   |  84680.00 | W L Program Design |
+| Yoshimura | Designer   |  84680.00 | W L Robot Design   |
+| Scoutten  | Designer   |  81340.00 | W L Program Design |
+| Scoutten  | Designer   |  81340.00 | W L Robot Design   |
+| Walker    | Designer   |  70450.00 | W L Program Design |
+| Walker    | Designer   |  70450.00 | W L Robot Design   |
+| Brown     | Designer   |  77740.00 | W L Program Design |
+| Brown     | Designer   |  77740.00 | W L Robot Design   |
+| Jones     | Designer   |  88270.00 | W L Program Design |
+| Jones     | Designer   |  88270.00 | W L Robot Design   |
+| Lutz      | Designer   |  89840.00 | W L Program Design |
+| Lutz      | Designer   |  89840.00 | W L Robot Design   |
+| Jefferson | Programmer |  62180.00 | W L Program Design |
+| Jefferson | Programmer |  62180.00 | W L Robot Design   |
+| Marino    | Programmer |  68760.00 | W L Program Design |
+| Marino    | Programmer |  68760.00 | W L Robot Design   |
+| Smith     | Programmer |  59180.00 | W L Program Design |
+| Smith     | Programmer |  59180.00 | W L Robot Design   |
+| Johnson   | Programmer |  57250.00 | W L Program Design |
+| Johnson   | Programmer |  57250.00 | W L Robot Design   |
+| Perez     | Programmer |  57380.00 | W L Program Design |
+| Perez     | Programmer |  57380.00 | W L Robot Design   |
+| Schneider | Operator   |  86250.00 | W L Program Design |
+| Schneider | Operator   |  86250.00 | W L Robot Design   |
+| Parker    | Operator   |  75340.00 | W L Program Design |
+| Parker    | Operator   |  75340.00 | W L Robot Design   |
+| Smith     | Operator   |  77750.00 | W L Program Design |
+| Smith     | Operator   |  77750.00 | W L Robot Design   |
+| Setright  | Operator   |  75900.00 | W L Program Design |
+| Setright  | Operator   |  75900.00 | W L Robot Design   |
+| Mehta     | Fieldrep   |  99950.00 | W L Program Design |
+| Mehta     | Fieldrep   |  99950.00 | W L Robot Design   |
+| Lee       | Fieldrep   |  95370.00 | W L Program Design |
+| Lee       | Fieldrep   |  95370.00 | W L Robot Design   |
+| Gounot    | Fieldrep   | 123840.00 | W L Program Design |
+| Gounot    | Fieldrep   | 123840.00 | W L Robot Design   |
++-----------+------------+-----------+--------------------+
+64 rows in set (0.00 sec)
+
+mysql> desc Emp;
++-----------+--------------+------+-----+---------+-------+
+| Field     | Type         | Null | Key | Default | Extra |
++-----------+--------------+------+-----+---------+-------+
+| empno     | char(6)      | NO   | PRI | NULL    |       |
+| firstname | varchar(12)  | YES  |     | NULL    |       |
+| midinit   | char(1)      | YES  |     | NULL    |       |
+| lastname  | varchar(15)  | YES  |     | NULL    |       |
+| workdept  | char(3)      | YES  | MUL | NULL    |       |
+| phoneno   | char(4)      | YES  |     | NULL    |       |
+| hiredate  | date         | YES  |     | NULL    |       |
+| job       | char(10)     | YES  |     | NULL    |       |
+| edlevel   | int(2)       | YES  |     | NULL    |       |
+| gender    | char(1)      | YES  |     | NULL    |       |
+| birthdate | date         | YES  |     | NULL    |       |
+| salary    | decimal(8,2) | YES  |     | NULL    |       |
+| bonus     | decimal(8,2) | YES  |     | NULL    |       |
+| comm      | decimal(8,2) | YES  |     | NULL    |       |
++-----------+--------------+------+-----+---------+-------+
+14 rows in set (0.01 sec)
+
+mysql> desc Dept;
++----------+-------------+------+-----+---------+-------+
+| Field    | Type        | Null | Key | Default | Extra |
++----------+-------------+------+-----+---------+-------+
+| deptno   | char(3)     | NO   | PRI | NULL    |       |
+| deptname | varchar(36) | NO   |     | NULL    |       |
+| mgrno    | char(6)     | YES  |     | NULL    |       |
+| admrdept | char(3)     | NO   |     | NULL    |       |
++----------+-------------+------+-----+---------+-------+
+4 rows in set (0.00 sec)
+
+mysql> SHOW TABLES;
++--------------------+
+| Tables_in_company2 |
++--------------------+
+| Dept               |
+| Emp                |
+| Proj               |
+| Pworks             |
++--------------------+
+4 rows in set (0.00 sec)
+
+mysql> desc Pworks;
++--------+-------------+------+-----+---------+-------+
+| Field  | Type        | Null | Key | Default | Extra |
++--------+-------------+------+-----+---------+-------+
+| empno  | char(6)     | NO   | PRI | NULL    |       |
+| projno | char(6)     | NO   | PRI | NULL    |       |
+| hours  | smallint(6) | YES  |     | NULL    |       |
++--------+-------------+------+-----+---------+-------+
+3 rows in set (0.01 sec)
+
+mysql> desc Proj;
++----------+-------------+------+-----+---------+-------+
+| Field    | Type        | Null | Key | Default | Extra |
++----------+-------------+------+-----+---------+-------+
+| projno   | char(6)     | NO   | PRI | NULL    |       |
+| projname | varchar(24) | NO   |     | NULL    |       |
+| deptno   | char(3)     | NO   | MUL | NULL    |       |
+| respemp  | char(6)     | NO   | MUL | NULL    |       |
+| prstdate | date        | YES  |     | NULL    |       |
+| prendate | date        | YES  |     | NULL    |       |
+| majproj  | char(6)     | YES  |     | NULL    |       |
++----------+-------------+------+-----+---------+-------+
+7 rows in set (0.00 sec)
+
+mysql> desc Dept;
++----------+-------------+------+-----+---------+-------+
+| Field    | Type        | Null | Key | Default | Extra |
++----------+-------------+------+-----+---------+-------+
+| deptno   | char(3)     | NO   | PRI | NULL    |       |
+| deptname | varchar(36) | NO   |     | NULL    |       |
+| mgrno    | char(6)     | YES  |     | NULL    |       |
+| admrdept | char(3)     | NO   |     | NULL    |       |
++----------+-------------+------+-----+---------+-------+
+4 rows in set (0.00 sec)
+
+mysql> desc Emp;
++-----------+--------------+------+-----+---------+-------+
+| Field     | Type         | Null | Key | Default | Extra |
++-----------+--------------+------+-----+---------+-------+
+| empno     | char(6)      | NO   | PRI | NULL    |       |
+| firstname | varchar(12)  | YES  |     | NULL    |       |
+| midinit   | char(1)      | YES  |     | NULL    |       |
+| lastname  | varchar(15)  | YES  |     | NULL    |       |
+| workdept  | char(3)      | YES  | MUL | NULL    |       |
+| phoneno   | char(4)      | YES  |     | NULL    |       |
+| hiredate  | date         | YES  |     | NULL    |       |
+| job       | char(10)     | YES  |     | NULL    |       |
+| edlevel   | int(2)       | YES  |     | NULL    |       |
+| gender    | char(1)      | YES  |     | NULL    |       |
+| birthdate | date         | YES  |     | NULL    |       |
+| salary    | decimal(8,2) | YES  |     | NULL    |       |
+| bonus     | decimal(8,2) | YES  |     | NULL    |       |
+| comm      | decimal(8,2) | YES  |     | NULL    |       |
++-----------+--------------+------+-----+---------+-------+
+14 rows in set (0.00 sec)
+
+mysql> SELECT firstname, lastname, job, deptno, deptname FROM Emp INNER JOIN Dept ON empno = mgrno;
++-----------+-----------+---------+--------+------------------------------+
+| firstname | lastname  | job     | deptno | deptname                     |
++-----------+-----------+---------+--------+------------------------------+
+| Christine | Haas      | Pres    | A00    | Spiffy Computer Service DIV. |
+| Michael   | Thompson  | Manager | B01    | Planning                     |
+| Sally     | Kwan      | Manager | C01    | Information Centre           |
+| Irving    | Stern     | Manager | D11    | Manufacturing Systems        |
+| Eva       | Pulaski   | Manager | D21    | Administration Systems       |
+| John      | Geyer     | Manager | E01    | Support Services             |
+| Eileen    | Henderson | Manager | E11    | Operations                   |
+| Theodore  | Spenser   | Manager | E21    | Software Support             |
++-----------+-----------+---------+--------+------------------------------+
+8 rows in set (0.00 sec)
+
+mysql> mysql> SOURCE Prac05Commands.txt
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+mysql> USE company;
+Database changed
+mysql> SOURCE Prac05Commands.txt
+Query OK, 0 rows affected, 1 warning (0.00 sec)
+
+Query OK, 0 rows affected (0.04 sec)
+
+Query OK, 0 rows affected, 1 warning (0.00 sec)
+
+Query OK, 0 rows affected (0.02 sec)
+
+Query OK, 0 rows affected, 1 warning (0.00 sec)
+
+Query OK, 0 rows affected (0.03 sec)
+
+Query OK, 0 rows affected, 1 warning (0.00 sec)
+
+Query OK, 0 rows affected (0.02 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
++-----------+------------+-----------+--------------------+
+| lastname  | job        | salary    | Results            |
++-----------+------------+-----------+--------------------+
+| Haas      | Pres       | 312750.00 | W L Program Design |
+| Haas      | Pres       | 312750.00 | W L Robot Design   |
+| Thompson  | Manager    | 161250.00 | W L Program Design |
+| Thompson  | Manager    | 161250.00 | W L Robot Design   |
+| Kwan      | Manager    | 158250.00 | W L Program Design |
+| Kwan      | Manager    | 158250.00 | W L Robot Design   |
+| Geyer     | Manager    | 160175.00 | W L Program Design |
+| Geyer     | Manager    | 160175.00 | W L Robot Design   |
+| Stern     | Manager    | 155555.00 | W L Program Design |
+| Stern     | Manager    | 155555.00 | W L Robot Design   |
+| Pulaski   | Manager    | 156170.00 | W L Program Design |
+| Pulaski   | Manager    | 156170.00 | W L Robot Design   |
+| Henderson | Manager    | 149750.00 | W L Program Design |
+| Henderson | Manager    | 149750.00 | W L Robot Design   |
+| Spenser   | Manager    | 146150.00 | W L Program Design |
+| Spenser   | Manager    | 146150.00 | W L Robot Design   |
+| Lucchesi  | Salesrep   | 156500.00 | W L Program Design |
+| Lucchesi  | Salesrep   | 156500.00 | W L Robot Design   |
+| Oconnell  | Programmer |  99250.00 | W L Program Design |
+| Oconnell  | Programmer |  99250.00 | W L Robot Design   |
+| Quintana  | Analyst    |  93800.00 | W L Program Design |
+| Quintana  | Analyst    |  93800.00 | W L Robot Design   |
+| Nicholls  | Analyst    |  88420.00 | W L Program Design |
+| Nicholls  | Analyst    |  88420.00 | W L Robot Design   |
+| Adamson   | Designer   |  95280.00 | W L Program Design |
+| Adamson   | Designer   |  95280.00 | W L Robot Design   |
+| Pianka    | Designer   |  92250.00 | W L Program Design |
+| Pianka    | Designer   |  92250.00 | W L Robot Design   |
+| Yoshimura | Designer   |  84680.00 | W L Program Design |
+| Yoshimura | Designer   |  84680.00 | W L Robot Design   |
+| Scoutten  | Designer   |  81340.00 | W L Program Design |
+| Scoutten  | Designer   |  81340.00 | W L Robot Design   |
+| Walker    | Designer   |  70450.00 | W L Program Design |
+| Walker    | Designer   |  70450.00 | W L Robot Design   |
+| Brown     | Designer   |  77740.00 | W L Program Design |
+| Brown     | Designer   |  77740.00 | W L Robot Design   |
+| Jones     | Designer   |  88270.00 | W L Program Design |
+| Jones     | Designer   |  88270.00 | W L Robot Design   |
+| Lutz      | Designer   |  89840.00 | W L Program Design |
+| Lutz      | Designer   |  89840.00 | W L Robot Design   |
+| Jefferson | Programmer |  62180.00 | W L Program Design |
+| Jefferson | Programmer |  62180.00 | W L Robot Design   |
+| Marino    | Programmer |  68760.00 | W L Program Design |
+| Marino    | Programmer |  68760.00 | W L Robot Design   |
+| Smith     | Programmer |  59180.00 | W L Program Design |
+| Smith     | Programmer |  59180.00 | W L Robot Design   |
+| Johnson   | Programmer |  57250.00 | W L Program Design |
+| Johnson   | Programmer |  57250.00 | W L Robot Design   |
+| Perez     | Programmer |  57380.00 | W L Program Design |
+| Perez     | Programmer |  57380.00 | W L Robot Design   |
+| Schneider | Operator   |  86250.00 | W L Program Design |
+| Schneider | Operator   |  86250.00 | W L Robot Design   |
+| Parker    | Operator   |  75340.00 | W L Program Design |
+| Parker    | Operator   |  75340.00 | W L Robot Design   |
+| Smith     | Operator   |  77750.00 | W L Program Design |
+| Smith     | Operator   |  77750.00 | W L Robot Design   |
+| Setright  | Operator   |  75900.00 | W L Program Design |
+| Setright  | Operator   |  75900.00 | W L Robot Design   |
+| Mehta     | Fieldrep   |  99950.00 | W L Program Design |
+| Mehta     | Fieldrep   |  99950.00 | W L Robot Design   |
+| Lee       | Fieldrep   |  95370.00 | W L Program Design |
+| Lee       | Fieldrep   |  95370.00 | W L Robot Design   |
+| Gounot    | Fieldrep   | 123840.00 | W L Program Design |
+| Gounot    | Fieldrep   | 123840.00 | W L Robot Design   |
++-----------+------------+-----------+--------------------+
+64 rows in set (0.01 sec)
+
++-----------+-----------+---------+---------------+------------------------------+
+| firstname | lastname  | job     | ManagerDeptNo | deptname                     |
++-----------+-----------+---------+---------------+------------------------------+
+| Christine | Haas      | Pres    | A00           | Spiffy Computer Service DIV. |
+| Michael   | Thompson  | Manager | B01           | Planning                     |
+| Sally     | Kwan      | Manager | C01           | Information Centre           |
+| Irving    | Stern     | Manager | D11           | Manufacturing Systems        |
+| Eva       | Pulaski   | Manager | D21           | Administration Systems       |
+| John      | Geyer     | Manager | E01           | Support Services             |
+| Eileen    | Henderson | Manager | E11           | Operations                   |
+| Theodore  | Spenser   | Manager | E21           | Software Support             |
++-----------+-----------+---------+---------------+------------------------------+
+8 rows in set (0.00 sec)
+
+mysql> SELECT firstname, lastname, job, deptno AS ManagerDeptNo, deptname FROM Emp INNER JOIN Dept ON empno = mgrno AND job='Manager';
++-----------+-----------+---------+---------------+------------------------+
+| firstname | lastname  | job     | ManagerDeptNo | deptname               |
++-----------+-----------+---------+---------------+------------------------+
+| Michael   | Thompson  | Manager | B01           | Planning               |
+| Sally     | Kwan      | Manager | C01           | Information Centre     |
+| Irving    | Stern     | Manager | D11           | Manufacturing Systems  |
+| Eva       | Pulaski   | Manager | D21           | Administration Systems |
+| John      | Geyer     | Manager | E01           | Support Services       |
+| Eileen    | Henderson | Manager | E11           | Operations             |
+| Theodore  | Spenser   | Manager | E21           | Software Support       |
++-----------+-----------+---------+---------------+------------------------+
+7 rows in set (0.00 sec)
+
+mysql> desc Dept;
++----------+-------------+------+-----+---------+-------+
+| Field    | Type        | Null | Key | Default | Extra |
++----------+-------------+------+-----+---------+-------+
+| deptno   | char(3)     | NO   | PRI | NULL    |       |
+| deptname | varchar(36) | NO   |     | NULL    |       |
+| mgrno    | char(6)     | YES  |     | NULL    |       |
+| admrdept | char(3)     | NO   |     | NULL    |       |
++----------+-------------+------+-----+---------+-------+
+4 rows in set (0.00 sec)
+
+mysql> desc Emp;
++-----------+--------------+------+-----+---------+-------+
+| Field     | Type         | Null | Key | Default | Extra |
++-----------+--------------+------+-----+---------+-------+
+| empno     | char(6)      | NO   | PRI | NULL    |       |
+| firstname | varchar(12)  | YES  |     | NULL    |       |
+| midinit   | char(1)      | YES  |     | NULL    |       |
+| lastname  | varchar(15)  | YES  |     | NULL    |       |
+| workdept  | char(3)      | YES  | MUL | NULL    |       |
+| phoneno   | char(4)      | YES  |     | NULL    |       |
+| hiredate  | date         | YES  |     | NULL    |       |
+| job       | char(10)     | YES  |     | NULL    |       |
+| edlevel   | int(2)       | YES  |     | NULL    |       |
+| gender    | char(1)      | YES  |     | NULL    |       |
+| birthdate | date         | YES  |     | NULL    |       |
+| salary    | decimal(8,2) | YES  |     | NULL    |       |
+| bonus     | decimal(8,2) | YES  |     | NULL    |       |
+| comm      | decimal(8,2) | YES  |     | NULL    |       |
++-----------+--------------+------+-----+---------+-------+
+14 rows in set (0.00 sec)
+
+mysql> SELECT deptno, deptname, firstname, lastname, job FROM Emp INNER JOIN Dept ON job='Manager';
++--------+------------------------------+-----------+-----------+---------+
+| deptno | deptname                     | firstname | lastname  | job     |
++--------+------------------------------+-----------+-----------+---------+
+| A00    | Spiffy Computer Service DIV. | Michael   | Thompson  | Manager |
+| A00    | Spiffy Computer Service DIV. | Sally     | Kwan      | Manager |
+| A00    | Spiffy Computer Service DIV. | John      | Geyer     | Manager |
+| A00    | Spiffy Computer Service DIV. | Irving    | Stern     | Manager |
+| A00    | Spiffy Computer Service DIV. | Eva       | Pulaski   | Manager |
+| A00    | Spiffy Computer Service DIV. | Eileen    | Henderson | Manager |
+| A00    | Spiffy Computer Service DIV. | Theodore  | Spenser   | Manager |
+| B01    | Planning                     | Michael   | Thompson  | Manager |
+| B01    | Planning                     | Sally     | Kwan      | Manager |
+| B01    | Planning                     | John      | Geyer     | Manager |
+| B01    | Planning                     | Irving    | Stern     | Manager |
+| B01    | Planning                     | Eva       | Pulaski   | Manager |
+| B01    | Planning                     | Eileen    | Henderson | Manager |
+| B01    | Planning                     | Theodore  | Spenser   | Manager |
+| C01    | Information Centre           | Michael   | Thompson  | Manager |
+| C01    | Information Centre           | Sally     | Kwan      | Manager |
+| C01    | Information Centre           | John      | Geyer     | Manager |
+| C01    | Information Centre           | Irving    | Stern     | Manager |
+| C01    | Information Centre           | Eva       | Pulaski   | Manager |
+| C01    | Information Centre           | Eileen    | Henderson | Manager |
+| C01    | Information Centre           | Theodore  | Spenser   | Manager |
+| D01    | Development Centre           | Michael   | Thompson  | Manager |
+| D01    | Development Centre           | Sally     | Kwan      | Manager |
+| D01    | Development Centre           | John      | Geyer     | Manager |
+| D01    | Development Centre           | Irving    | Stern     | Manager |
+| D01    | Development Centre           | Eva       | Pulaski   | Manager |
+| D01    | Development Centre           | Eileen    | Henderson | Manager |
+| D01    | Development Centre           | Theodore  | Spenser   | Manager |
+| D11    | Manufacturing Systems        | Michael   | Thompson  | Manager |
+| D11    | Manufacturing Systems        | Sally     | Kwan      | Manager |
+| D11    | Manufacturing Systems        | John      | Geyer     | Manager |
+| D11    | Manufacturing Systems        | Irving    | Stern     | Manager |
+| D11    | Manufacturing Systems        | Eva       | Pulaski   | Manager |
+| D11    | Manufacturing Systems        | Eileen    | Henderson | Manager |
+| D11    | Manufacturing Systems        | Theodore  | Spenser   | Manager |
+| D21    | Administration Systems       | Michael   | Thompson  | Manager |
+| D21    | Administration Systems       | Sally     | Kwan      | Manager |
+| D21    | Administration Systems       | John      | Geyer     | Manager |
+| D21    | Administration Systems       | Irving    | Stern     | Manager |
+| D21    | Administration Systems       | Eva       | Pulaski   | Manager |
+| D21    | Administration Systems       | Eileen    | Henderson | Manager |
+| D21    | Administration Systems       | Theodore  | Spenser   | Manager |
+| E01    | Support Services             | Michael   | Thompson  | Manager |
+| E01    | Support Services             | Sally     | Kwan      | Manager |
+| E01    | Support Services             | John      | Geyer     | Manager |
+| E01    | Support Services             | Irving    | Stern     | Manager |
+| E01    | Support Services             | Eva       | Pulaski   | Manager |
+| E01    | Support Services             | Eileen    | Henderson | Manager |
+| E01    | Support Services             | Theodore  | Spenser   | Manager |
+| E11    | Operations                   | Michael   | Thompson  | Manager |
+| E11    | Operations                   | Sally     | Kwan      | Manager |
+| E11    | Operations                   | John      | Geyer     | Manager |
+| E11    | Operations                   | Irving    | Stern     | Manager |
+| E11    | Operations                   | Eva       | Pulaski   | Manager |
+| E11    | Operations                   | Eileen    | Henderson | Manager |
+| E11    | Operations                   | Theodore  | Spenser   | Manager |
+| E21    | Software Support             | Michael   | Thompson  | Manager |
+| E21    | Software Support             | Sally     | Kwan      | Manager |
+| E21    | Software Support             | John      | Geyer     | Manager |
+| E21    | Software Support             | Irving    | Stern     | Manager |
+| E21    | Software Support             | Eva       | Pulaski   | Manager |
+| E21    | Software Support             | Eileen    | Henderson | Manager |
+| E21    | Software Support             | Theodore  | Spenser   | Manager |
++--------+------------------------------+-----------+-----------+---------+
+63 rows in set (0.00 sec)
+

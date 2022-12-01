@@ -1,0 +1,118 @@
+#1
+CREATE TABLE Student(
+studentNo CHAR(8) PRIMARY KEY,
+phone CHAR(10),
+name VARCHAR(12)
+);
+
+
+CREATE TABLE Building(
+bNo CHAR(5) PRIMARY KEY,
+bName VARCHAR(12)
+
+);
+
+CREATE TABLE Room(
+roomNo CHAR(4) PRIMARY KEY,
+type CHAR(8),
+capacity CHAR(3),
+bNo CHAR(5),
+CONSTRAINT FK_Building FOREIGN KEY (bNo) REFERENCES Building(bNo)
+);
+
+CREATE TABLE Unit(
+bNo CHAR(5),
+crePts INT,
+title VARCHAR(12),
+unitNo CHAR(4) PRIMARY KEY,
+roomNo CHAR(4),
+day VARCHAR(10),
+time TIME,
+CONSTRAINT fk_Room FOREIGN KEY (roomNo) REFERENCES Room(roomNo)
+);
+
+
+
+CREATE TABLE Take(
+unitNo CHAR(4),
+studentNO CHAR(8),
+CONSTRAINT fk_Units FOREIGN KEY (unitNo) REFERENCES Unit(unitNo),
+CONSTRAINT fk_Student FOREIGN KEY (studentNo) REFERENCES Student(studentNo)
+
+);
+
+#2
+
+CREATE TABLE Passengers(
+ticketno INT PRIMARY KEY,
+seatno INT,
+bagno INT,
+name VARCHAR(10) NOT NULL,
+phoneno CHAR(10)
+);
+
+CREATE TABLE Flights(
+flightno INT PRIMARY KEY,
+date DATE,
+time TIME
+);
+
+CREATE TABLE Airport(
+airportName VARCHAR(10) PRIMARY KEY,
+location VARCHAR(20),
+terminal INT
+);
+
+CREATE TABLE Staff(
+employeeNo INT PRIMARY KEY,
+job VARCHAR(10),
+name VARCHAR(15),
+lastname VARCHAR(15)
+);
+
+CREATE TABLE Planes(
+companyID VARCHAR(4) PRIMARY KEY,
+numseats INT,
+companyname VARCHAR(10),
+planetype VARCHAR(15)
+);
+
+CREATE TABLE Buy(
+ticketno INT,
+flightno INT,
+CONSTRAINT fk_Passengers FOREIGN KEY (ticketno) REFERENCES Passengers(ticketno),
+CONSTRAINT fk_Flight FOREIGN KEY (flightno) REFERENCES Flights(flightno)
+);
+
+#foreign key on the many side 1:N relation
+CREATE TABLE Offers(
+flightno INT,
+CONSTRAINT fk_Flights FOREIGN KEY (flightno) REFERENCES Flights(flightno)
+
+);
+
+
+CREATE TABLE Work(
+airportName VARCHAR(10),
+CONSTRAINT fk_Airport FOREIGN KEY (airportName) REFERENCES Airport(airportName)
+
+);
+
+CREATE TABLE Fly(
+companyID VARCHAR(4),
+CONSTRAINT fk_Planes FOREIGN KEY (companyID) REFERENCES Planes(companyID)
+
+);
+
+
+
+
+
+
+
+
+
+
+
+
+

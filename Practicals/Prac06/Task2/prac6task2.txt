@@ -1,0 +1,33 @@
+#1
+CREATE DATABASE NewCompany
+#2
+SOURCE rebuild.sql
+#3
+
+CREATE TABLE Emp2 AS SELECT empno AS eID, CONCAT(lastname,',',left(firstname,1),'.') AS eName, YEAR(CURDATE()) - DATE_FORMAT(birthdate, '%Y') As Age, gender, salary FROM Emp;
+
+#4
+
+ALTER TABLE Emp2 ADD PRIMARY KEY (eID);
+
+#5
+CREATE TABLE Dept2 (dID CHAR(3), dName VARCHAR(36), budget DECIMAL(12,2),managerID CHAR(6), PRIMARY KEY(dID), FOREIGN KEY (managerID) REFERENCES Emp2 (eID) );
+
+
+#6
+INSERT INTO Dept2 (budget,dID) SELECT 1.2*SUM(salary), workdept FROM Emp GROUP BY workdept;
+
+#7
+
+CREATE TABLE Works2 (Pct_time INT(3)) AS SELECT empno as eID, workdept as dID FROM Emp;
+Update Works2 SET Pct_time = 100;
+
+#8
+ALTER TABLE Works2 ADD Since TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP;
+
+#9
+DELETE FROM Works2 WHERE EXISTS(SELECT mgrno FROM Dept WHERE Dept.mgrno =Works2.eID);
+#10
+UPDATE Works2, Emp SET Works2.Since = Emp.hiredate WHERE Works2.eID = Emp.empno;
+#11
+ALTER TABLE Works2 ADD PRIMARY KEY (eID,dID);
