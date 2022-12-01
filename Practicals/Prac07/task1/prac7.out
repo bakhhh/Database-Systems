@@ -1,0 +1,308 @@
+mysql> desc Emp;
++-----------+--------------+------+-----+---------+-------+
+| Field     | Type         | Null | Key | Default | Extra |
++-----------+--------------+------+-----+---------+-------+
+| empno     | char(6)      | NO   | PRI | NULL    |       |
+| firstname | varchar(12)  | YES  |     | NULL    |       |
+| midinit   | char(1)      | YES  |     | NULL    |       |
+| lastname  | varchar(15)  | YES  |     | NULL    |       |
+| workdept  | char(3)      | YES  | MUL | NULL    |       |
+| phoneno   | char(4)      | YES  |     | NULL    |       |
+| hiredate  | date         | YES  |     | NULL    |       |
+| job       | char(10)     | YES  |     | NULL    |       |
+| edlevel   | int(2)       | YES  |     | NULL    |       |
+| gender    | char(1)      | YES  |     | NULL    |       |
+| birthdate | date         | YES  |     | NULL    |       |
+| salary    | decimal(8,2) | YES  |     | NULL    |       |
+| bonus     | decimal(8,2) | YES  |     | NULL    |       |
+| comm      | decimal(8,2) | YES  |     | NULL    |       |
++-----------+--------------+------+-----+---------+-------+
+14 rows in set (0.00 sec)
+
+mysql> ALTER TABLE Emp ADD newBonus decimal(8,2);
+Query OK, 0 rows affected (0.12 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> desc Emp;
++-----------+--------------+------+-----+---------+-------+
+| Field     | Type         | Null | Key | Default | Extra |
++-----------+--------------+------+-----+---------+-------+
+| empno     | char(6)      | NO   | PRI | NULL    |       |
+| firstname | varchar(12)  | YES  |     | NULL    |       |
+| midinit   | char(1)      | YES  |     | NULL    |       |
+| lastname  | varchar(15)  | YES  |     | NULL    |       |
+| workdept  | char(3)      | YES  | MUL | NULL    |       |
+| phoneno   | char(4)      | YES  |     | NULL    |       |
+| hiredate  | date         | YES  |     | NULL    |       |
+| job       | char(10)     | YES  |     | NULL    |       |
+| edlevel   | int(2)       | YES  |     | NULL    |       |
+| gender    | char(1)      | YES  |     | NULL    |       |
+| birthdate | date         | YES  |     | NULL    |       |
+| salary    | decimal(8,2) | YES  |     | NULL    |       |
+| bonus     | decimal(8,2) | YES  |     | NULL    |       |
+| comm      | decimal(8,2) | YES  |     | NULL    |       |
+| newBonus  | decimal(8,2) | YES  |     | NULL    |       |
++-----------+--------------+------+-----+---------+-------+
+15 rows in set (0.00 sec)
+
+mysql> SOURCE reset1.sql
+Query OK, 0 rows affected (0.01 sec)
+
+mysql> CALL resetEmpNewBonus();
+Query OK, 32 rows affected (0.01 sec)
+
+mysql> SHOW procedure status where Db ='dswork';
++--------+------------------+-----------+---------+---------------------+---------------------+---------------+-----------------+----------------------+----------------------+--------------------+
+| Db     | Name             | Type      | Definer | Modified            | Created             | Security_type | Comment         | character_set_client | collation_connection | Database Collation |
++--------+------------------+-----------+---------+---------------------+---------------------+---------------+-----------------+----------------------+----------------------+--------------------+
+| dswork | resetEmpNewBonus | PROCEDURE | me@%    | 2022-10-06 12:16:24 | 2022-10-06 12:16:24 | DEFINER       | Sets bonus to 0 | utf8                 | utf8_general_ci      | latin1_swedish_ci  |
++--------+------------------+-----------+---------+---------------------+---------------------+---------------+-----------------+----------------------+----------------------+--------------------+
+1 row in set (0.01 sec)
+
+mysql> DROP resetEmpNewBonus();
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'resetEmpNewBonus()' at line 1
+mysql> DROP resetEmpNewBonus;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'resetEmpNewBonus' at line 1
+mysql> DROP PROCEDURE  resetEmpNewBonus;
+Query OK, 0 rows affected (0.00 sec)
+
+mysql> SHOW procedure status where Db ='dswork';
+Empty set (0.00 sec)
+
+mysql> SOURCE reset2.sql
+Query OK, 0 rows affected (0.00 sec)
+
+mysql> CALL resetEmpNewBonus2(100);
+Query OK, 32 rows affected (0.01 sec)
+
+mysql> CALL resetEmpNewBonus2(400);
+Query OK, 32 rows affected (0.00 sec)
+
+mysql> SELECT * FROM Emp;
++--------+-----------+---------+-----------+----------+---------+------------+------------+---------+--------+------------+-----------+---------+---------+----------+
+| empno  | firstname | midinit | lastname  | workdept | phoneno | hiredate   | job        | edlevel | gender | birthdate  | salary    | bonus   | comm    | newBonus |
++--------+-----------+---------+-----------+----------+---------+------------+------------+---------+--------+------------+-----------+---------+---------+----------+
+| 000010 | Christine | I       | Haas      | A00      | 3978    | 2000-01-01 | Pres       |      18 | F      | 1968-08-14 | 312750.00 | 1000.00 | 4220.00 |   400.00 |
+| 000020 | Michael   | L       | Thompson  | B01      | 3476    | 2008-10-10 | Manager    |      18 | M      | 1983-02-02 | 161250.00 |  800.00 | 3000.00 |   400.00 |
+| 000030 | Sally     | A       | Kwan      | C01      | 4738    | 2010-05-05 | Manager    |      20 | F      | 1980-05-11 | 158250.00 |  800.00 | 3060.00 |   400.00 |
+| 000050 | John      | B       | Geyer     | E01      | 6789    | 2003-08-17 | Manager    |      16 | M      | 1975-09-15 | 160175.00 |  800.00 | 3214.00 |   400.00 |
+| 000060 | Irving    | F       | Stern     | D11      | 6423    | 2003-09-14 | Manager    |      16 | M      | 1975-07-07 | 155555.00 |  600.00 | 2580.00 |   400.00 |
+| 000070 | Eva       | D       | Pulaski   | D21      | 7831    | 2000-09-30 | Manager    |      16 | F      | 1983-05-26 | 156170.00 |  700.00 | 2893.00 |   400.00 |
+| 000090 | Eileen    | W       | Henderson | E11      | 5498    | 2002-08-15 | Manager    |      16 | F      | 1976-05-15 | 149750.00 |  600.00 | 2380.00 |   400.00 |
+| 000100 | Theodore  | Q       | Spenser   | E21      | 0972    | 2006-06-19 | Manager    |      14 | M      | 1989-12-18 | 146150.00 |  500.00 | 2092.00 |   400.00 |
+| 000110 | Vincenzo  | G       | Lucchesi  | A00      | 3490    | 2003-05-16 | Salesrep   |      19 | M      | 1983-11-05 | 156500.00 |  900.00 | 3720.00 |   400.00 |
+| 000120 | Sean      |         | Oconnell  | A00      | 2167    | 2003-10-05 | Programmer |      14 | M      | 1982-10-18 |  99250.00 |  600.00 | 2340.00 |   400.00 |
+| 000130 | Dolores   | M       | Quintana  | C01      | 4578    | 2006-07-28 | Analyst    |      16 | F      | 1985-09-15 |  93800.00 |  500.00 | 1904.00 |   400.00 |
+| 000140 | Heather   | A       | Nicholls  | C01      | 1793    | 2006-12-15 | Analyst    |      18 | F      | 1986-10-19 |  88420.00 |  600.00 | 2274.00 |   400.00 |
+| 000150 | Bruce     |         | Adamson   | D11      | 4510    | 2007-02-12 | Designer   |      16 | M      | 1982-05-17 |  95280.00 |  500.00 | 2022.00 |   400.00 |
+| 000160 | Elizabeth | R       | Pianka    | D11      | 3782    | 2009-10-11 | Designer   |      17 | F      | 1987-04-12 |  92250.00 |  400.00 | 1780.00 |   400.00 |
+| 000170 | Masatoshi | J       | Yoshimura | D11      | 2890    | 2008-01-01 | Designer   |      16 | M      | 1986-01-05 |  84680.00 |  500.00 | 1974.00 |   400.00 |
+| 000180 | Marilyn   | S       | Scoutten  | D11      | 1682    | 2003-07-07 | Designer   |      17 | F      | 1982-02-21 |  81340.00 |  500.00 | 1707.00 |   400.00 |
+| 000190 | James     | H       | Walker    | D11      | 2986    | 2012-07-26 | Designer   |      16 | M      | 1992-06-25 |  70450.00 |  400.00 | 1636.00 |   400.00 |
+| 000200 | David     |         | Brown     | D11      | 4501    | 2008-03-03 | Designer   |      16 | M      | 1986-05-29 |  77740.00 |  600.00 | 2217.00 |   400.00 |
+| 000210 | William   | T       | Jones     | D11      | 0942    | 2009-04-11 | Designer   |      17 | M      | 1983-03-23 |  88270.00 |  400.00 | 1462.00 |   400.00 |
+| 000220 | Jennifer  | K       | Lutz      | D11      | 0672    | 2004-08-29 | Designer   |      18 | F      | 1979-03-19 |  89840.00 |  600.00 | 2387.00 |   400.00 |
+| 000230 | James     | J       | Jefferson | D21      | 2094    | 2011-11-21 | Programmer |      14 | M      | 1985-05-30 |  62180.00 |  400.00 | 1774.00 |   400.00 |
+| 000240 | Salvatore | M       | Marino    | D21      | 3780    | 2009-12-05 | Programmer |      17 | M      | 1984-03-31 |  68760.00 |  600.00 | 2301.00 |   400.00 |
+| 000250 | Daniel    | S       | Smith     | D21      | 0961    | 2009-10-30 | Programmer |      15 | M      | 1982-11-12 |  59180.00 |  400.00 | 1534.00 |   400.00 |
+| 000260 | Sybil     | V       | Johnson   | D21      | 8953    | 2005-09-11 | Programmer |      16 | F      | 1986-10-05 |  57250.00 |  300.00 | 1380.00 |   400.00 |
+| 000270 | 03ia      | L       | Perez     | D21      | 9001    | 2009-09-30 | Programmer |      15 | F      | 1983-05-26 |  57380.00 |  500.00 | 2190.00 |   400.00 |
+| 000280 | Ethel     | R       | Schneider | E11      | 8997    | 2009-03-24 | Operator   |      17 | F      | 1986-03-28 |  86250.00 |  500.00 | 2100.00 |   400.00 |
+| 000290 | John      | R       | Parker    | E11      | 4502    | 2006-05-30 | Operator   |      12 | M      | 1988-07-09 |  75340.00 |  300.00 | 1227.00 |   400.00 |
+| 000300 | Philip    | X       | Smith     | E11      | 2095    | 2007-06-19 | Operator   |      14 | M      | 1986-10-27 |  77750.00 |  400.00 | 1420.00 |   400.00 |
+| 000310 | Maude     | F       | Setright  | E11      | 3332    | 2001-09-12 | Operator   |      12 | F      | 1981-04-21 |  75900.00 |  300.00 | 1272.00 |   400.00 |
+| 000320 | Ramlal    | V       | Mehta     | E21      | 9990    | 2005-07-07 | Fieldrep   |      16 | M      | 1982-08-11 |  99950.00 |  400.00 | 1596.00 |   400.00 |
+| 000330 | Wing      |         | Lee       | E21      | 2103    | 1999-02-23 | Fieldrep   |      14 | M      | 1981-07-18 |  95370.00 |  500.00 | 2030.00 |   400.00 |
+| 000340 | Jason     | R       | Gounot    | E21      | 5698    | 1999-05-05 | Fieldrep   |      16 | M      | 1976-05-17 | 123840.00 |  500.00 | 1907.00 |   400.00 |
++--------+-----------+---------+-----------+----------+---------+------------+------------+---------+--------+------------+-----------+---------+---------+----------+
+32 rows in set (0.00 sec)
+
+mysql> desc Emp;
++-----------+--------------+------+-----+---------+-------+
+| Field     | Type         | Null | Key | Default | Extra |
++-----------+--------------+------+-----+---------+-------+
+| empno     | char(6)      | NO   | PRI | NULL    |       |
+| firstname | varchar(12)  | YES  |     | NULL    |       |
+| midinit   | char(1)      | YES  |     | NULL    |       |
+| lastname  | varchar(15)  | YES  |     | NULL    |       |
+| workdept  | char(3)      | YES  | MUL | NULL    |       |
+| phoneno   | char(4)      | YES  |     | NULL    |       |
+| hiredate  | date         | YES  |     | NULL    |       |
+| job       | char(10)     | YES  |     | NULL    |       |
+| edlevel   | int(2)       | YES  |     | NULL    |       |
+| gender    | char(1)      | YES  |     | NULL    |       |
+| birthdate | date         | YES  |     | NULL    |       |
+| salary    | decimal(8,2) | YES  |     | NULL    |       |
+| bonus     | decimal(8,2) | YES  |     | NULL    |       |
+| comm      | decimal(8,2) | YES  |     | NULL    |       |
+| newBonus  | decimal(8,2) | YES  |     | NULL    |       |
++-----------+--------------+------+-----+---------+-------+
+15 rows in set (0.00 sec)
+
+mysql> SOURCE insert1.sql
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'insEmpDetails(e CHAR(6), f VARCHAR(12),m CHAR(1), l VARCHAR(15), w CHAR(3)  )
+CO' at line 1
+mysql> SOURCE insert1.sql
+Query OK, 0 rows affected (0.00 sec)
+
+mysql> DROP PROCEDURE  insEmpDetails;
+Query OK, 0 rows affected (0.00 sec)
+
+mysql> SHOW procedure status where Db ='dswork';
++--------+-------------------+-----------+---------+---------------------+---------------------+---------------+------------------------------+----------------------+----------------------+--------------------+
+| Db     | Name              | Type      | Definer | Modified            | Created             | Security_type | Comment                      | character_set_client | collation_connection | Database Collation |
++--------+-------------------+-----------+---------+---------------------+---------------------+---------------+------------------------------+----------------------+----------------------+--------------------+
+| dswork | resetEmpNewBonus2 | PROCEDURE | me@%    | 2022-10-06 12:21:40 | 2022-10-06 12:21:40 | DEFINER       | Sets bonus to value provided | utf8                 | utf8_general_ci      | latin1_swedish_ci  |
++--------+-------------------+-----------+---------+---------------------+---------------------+---------------+------------------------------+----------------------+----------------------+--------------------+
+1 row in set (0.00 sec)
+
+mysql> desc Emp;
++-----------+--------------+------+-----+---------+-------+
+| Field     | Type         | Null | Key | Default | Extra |
++-----------+--------------+------+-----+---------+-------+
+| empno     | char(6)      | NO   | PRI | NULL    |       |
+| firstname | varchar(12)  | YES  |     | NULL    |       |
+| midinit   | char(1)      | YES  |     | NULL    |       |
+| lastname  | varchar(15)  | YES  |     | NULL    |       |
+| workdept  | char(3)      | YES  | MUL | NULL    |       |
+| phoneno   | char(4)      | YES  |     | NULL    |       |
+| hiredate  | date         | YES  |     | NULL    |       |
+| job       | char(10)     | YES  |     | NULL    |       |
+| edlevel   | int(2)       | YES  |     | NULL    |       |
+| gender    | char(1)      | YES  |     | NULL    |       |
+| birthdate | date         | YES  |     | NULL    |       |
+| salary    | decimal(8,2) | YES  |     | NULL    |       |
+| bonus     | decimal(8,2) | YES  |     | NULL    |       |
+| comm      | decimal(8,2) | YES  |     | NULL    |       |
+| newBonus  | decimal(8,2) | YES  |     | NULL    |       |
++-----------+--------------+------+-----+---------+-------+
+15 rows in set (0.00 sec)
+
+mysql> SOURCE insert1.sql
+Query OK, 0 rows affected (0.00 sec)
+
+mysql> CALL insEmpDetails('206051','Sohail','H','Bakhshi',B-2
+    -> ^C
+mysql> CALL insEmpDetails('206051','Sohail','H','Bakhshi','B02',500000.00)
+    -> [A
+    -> c
+    -> ^C
+mysql> CALL insEmpDetails('206051','Sohail','H','Bakhshi','B02',500000.00);
+ERROR 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`dswork`.`Emp`, CONSTRAINT `Emp_ibfk_1` FOREIGN KEY (`workdept`) REFERENCES `Dept` (`deptno`))
+mysql> CALL insEmpDetails('206051','Sohail','H','Bakhshi','BO2',500000.00);
+ERROR 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`dswork`.`Emp`, CONSTRAINT `Emp_ibfk_1` FOREIGN KEY (`workdept`) REFERENCES `Dept` (`deptno`))
+mysql> CALL insEmpDetails('206051','Sohail','H','Bakhshi','BO2',500000.00,0);
+ERROR 1318 (42000): Incorrect number of arguments for PROCEDURE dswork.insEmpDetails; expected 6, got 7
+mysql> CALL insEmpDetails('206051','Sohail','H','Bakhshi','BO2',50000);
+ERROR 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`dswork`.`Emp`, CONSTRAINT `Emp_ibfk_1` FOREIGN KEY (`workdept`) REFERENCES `Dept` (`deptno`))
+mysql> desc Emp;
++-----------+--------------+------+-----+---------+-------+
+| Field     | Type         | Null | Key | Default | Extra |
++-----------+--------------+------+-----+---------+-------+
+| empno     | char(6)      | NO   | PRI | NULL    |       |
+| firstname | varchar(12)  | YES  |     | NULL    |       |
+| midinit   | char(1)      | YES  |     | NULL    |       |
+| lastname  | varchar(15)  | YES  |     | NULL    |       |
+| workdept  | char(3)      | YES  | MUL | NULL    |       |
+| phoneno   | char(4)      | YES  |     | NULL    |       |
+| hiredate  | date         | YES  |     | NULL    |       |
+| job       | char(10)     | YES  |     | NULL    |       |
+| edlevel   | int(2)       | YES  |     | NULL    |       |
+| gender    | char(1)      | YES  |     | NULL    |       |
+| birthdate | date         | YES  |     | NULL    |       |
+| salary    | decimal(8,2) | YES  |     | NULL    |       |
+| bonus     | decimal(8,2) | YES  |     | NULL    |       |
+| comm      | decimal(8,2) | YES  |     | NULL    |       |
+| newBonus  | decimal(8,2) | YES  |     | NULL    |       |
++-----------+--------------+------+-----+---------+-------+
+15 rows in set (0.00 sec)
+
+mysql> CALL insEmpDetails('206051','Sohail','H','Bakhshi','BO2',50000);
+ERROR 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`dswork`.`Emp`, CONSTRAINT `Emp_ibfk_1` FOREIGN KEY (`workdept`) REFERENCES `Dept` (`deptno`))
+mysql> DROP PROCEDURE  insEmpDetails;
+Query OK, 0 rows affected (0.00 sec)
+
+mysql> SOURCE insert1.sql
+Query OK, 0 rows affected (0.00 sec)
+
+mysql> CALL insEmpDetails('206051','Sohail','H','Bakhshi','BO2',50000);
+ERROR 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`dswork`.`Emp`, CONSTRAINT `Emp_ibfk_1` FOREIGN KEY (`workdept`) REFERENCES `Dept` (`deptno`))
+mysql> CALL insEmpDetails('100001','lin','M','Soon','B02',50000);
+ERROR 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`dswork`.`Emp`, CONSTRAINT `Emp_ibfk_1` FOREIGN KEY (`workdept`) REFERENCES `Dept` (`deptno`))
+mysql> show tables;
++------------------+
+| Tables_in_dswork |
++------------------+
+| Dept             |
+| Emp              |
+| Proj             |
+| Pworks           |
++------------------+
+4 rows in set (0.00 sec)
+
+mysql> DROP Table Dept;
+ERROR 1217 (23000): Cannot delete or update a parent row: a foreign key constraint fails
+mysql> DROP Dept;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Dept' at line 1
+mysql> DROP Table Emp;
+ERROR 1217 (23000): Cannot delete or update a parent row: a foreign key constraint fails
+mysql> DROP Table Proj;
+ERROR 1217 (23000): Cannot delete or update a parent row: a foreign key constraint fails
+mysql> DROP Table Pworsk;
+ERROR 1051 (42S02): Unknown table 'dswork.Pworsk'
+mysql> DROP Table Pworks;
+Query OK, 0 rows affected (0.01 sec)
+
+mysql> DROP Table Proj;
+Query OK, 0 rows affected (0.01 sec)
+
+mysql> DROP Table Emp;
+Query OK, 0 rows affected (0.00 sec)
+
+mysql> DROP Dept;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Dept' at line 1
+mysql> DROP Table Dept;
+Query OK, 0 rows affected (0.00 sec)
+
+mysql> SOURCE create_tables.sql
+Query OK, 0 rows affected (0.02 sec)
+
+Query OK, 0 rows affected (0.02 sec)
+
+mysql> SHOW TABLES;
++------------------+
+| Tables_in_dswork |
++------------------+
+| Dept             |
+| Emp              |
++------------------+
+2 rows in set (0.00 sec)
+
+mysql> SOURCE prac7.txt
+Query OK, 0 rows affected (0.04 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+Query OK, 0 rows affected (0.00 sec)
+
++--------+-------------------+-----------+---------+---------------------+---------------------+---------------+------------------------------+----------------------+----------------------+--------------------+
+| Db     | Name              | Type      | Definer | Modified            | Created             | Security_type | Comment                      | character_set_client | collation_connection | Database Collation |
++--------+-------------------+-----------+---------+---------------------+---------------------+---------------+------------------------------+----------------------+----------------------+--------------------+
+| dswork | insEmpDetails     | PROCEDURE | me@%    | 2022-10-06 12:50:33 | 2022-10-06 12:50:33 | DEFINER       | insert into emp table        | utf8                 | utf8_general_ci      | latin1_swedish_ci  |
+| dswork | resetEmpNewBonus  | PROCEDURE | me@%    | 2022-10-06 12:58:29 | 2022-10-06 12:58:29 | DEFINER       | Sets bonus to 0              | utf8                 | utf8_general_ci      | latin1_swedish_ci  |
+| dswork | resetEmpNewBonus2 | PROCEDURE | me@%    | 2022-10-06 12:21:40 | 2022-10-06 12:21:40 | DEFINER       | Sets bonus to value provided | utf8                 | utf8_general_ci      | latin1_swedish_ci  |
++--------+-------------------+-----------+---------+---------------------+---------------------+---------------+------------------------------+----------------------+----------------------+--------------------+
+3 rows in set (0.01 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+ERROR 1304 (42000): PROCEDURE resetEmpNewBonus2 already exists
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Empty set (0.00 sec)
+
+ERROR 1304 (42000): PROCEDURE insEmpDetails already exists
+mysql> CALL insEmpDetails('206051','Sohail','H','Bakhshi','BO2',50000);
+ERROR 1364 (HY000): Field 'job' doesn't have a default value
+mysql> 

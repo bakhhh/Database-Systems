@@ -1,0 +1,35 @@
+#prac7
+#20605126
+
+#Task 1
+
+
+source createTable_t1t2t3.sql
+source inst1t2.sql
+
+
+select * from t1;
+select * from t2;
+
+#2
+
+#3
+source 
+
+source cursorInsert.sql
+SELECT * from t1;
+SELECT * from t2;
+SELECT * from t3;
+
+
+#4
+
+
+
+
+
+
+
+
+
+

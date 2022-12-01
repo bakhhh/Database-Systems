@@ -1,0 +1,14 @@
+#1 
+
+ALTER TABLE Proj ADD empcnt int;
+
+ALTER TABLE Proj ADD hrstotal SMALLINT;
+
+
+
+
+
+#2
+UPDATE Proj SET empcnt = COUNT(p1.empno) From Pworks p1 JOIN Pworks p2 ON p1.empno = p2.empno;
+select p1.projno, COUNT(p1.empno) From Pworks AS p1 INNER JOIN Pworks AS p2 on p1.empno = p2.empno GROUP BY p1.empno,p1.projno ;
+

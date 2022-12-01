@@ -1,0 +1,68 @@
+#1 
+
+DROP TABLE IF EXISTS Emp1;
+DROP TABLE IF EXISTS Dept1;
+
+CREATE TABLE Dept1(
+                dept_no   CHAR(3) NOT NULL,
+                dept_name VARCHAR(36),
+		total_sal DECIMAL(8,2),
+                mgr    CHAR(6),
+        	PRIMARY KEY(dept_no)
+);
+
+CREATE TABLE Emp1(
+                emp_no CHAR(6) NOT NULL,
+                name VARCHAR(12) NOT NULL,
+                dept_no CHAR(3) NOT NULL,
+                salary DECIMAL(8,2),
+                supervisor CHAR(6),
+		PRIMARY KEY(emp_no),
+		FOREIGN KEY(dept_no) REFERENCES Dept1(dept_no)
+		
+);
+
+
+
+#2
+source trigger.sql
+
+insert into Dept1(dept_no,dept_name,total_sal) values('A00','Spiffy Computer Service DIV.',0);
+
+INSERT INTO Emp1(emp_no, name,dept_no,salary,supervisor) VALUES('400000','Bob','A00',100000,'200000');
+
+INSERT INTO Emp1(emp_no, name,dept_no,salary,supervisor) VALUES('100000','Sohail','A00',60000,'200000');
+
+select * from Dept1;
+
+
+
+#3
+source trigger2.sql
+
+UPDATE Emp1 SET salary =70000 WHERE name ='Sohail';
+
+select * from Dept1;
+
+#4
+
+#5
+source trigger4.sql
+DELETE FROM Emp1 WHERE name ='Sohail';
+select * from Dept1;
+
+#6
+
+source trigger5.sql
+INSERT INTO Emp1(emp_no, name,dept_no,salary,supervisor) VALUES('500000','jack','A00',10000,'200000');
+
+INSERT INTO Emp1(emp_no, name,dept_no,salary,supervisor) VALUES('500000','jack','A00',30000,'200000');
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,24 @@
+#prac7
+#20605126
+source rebuild.sql
+#Task 1
+#1
+source procedure.sql
+
+CALL empProj('000340','OP1010',10);
+
+CALL empProj('000340','AD3113',-1);
+
+CALL empProj('000340','AD3113',5);
+
+
+#2
+source procedure2.sql
+CALL empProj2('000020','MA2111',5);
+
+CALL empProj2('000000','MA21e1',5);
+CALL empProj2('000020','wA2111',5);
+
+CALL empProj2('000020','MA2110',-2);
+
+

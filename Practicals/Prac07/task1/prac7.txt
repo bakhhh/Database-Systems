@@ -1,0 +1,69 @@
+#prac7
+#20605126
+SOURCE create_tables.sql
+SOURCE insdept.sql
+SOurce insemp.sql
+#Task 1
+#
+#1
+ALTER TABLE Emp ADD newBonus decimal(8,2);
+
+#2
+source reset1.sql
+
+#3
+SHOW PROCEDURE STATUS WHERE Db='dswork';
+
+#4
+DROP PROCEDURE resetEmpNewBonus;
+
+
+#5
+source reset2.sql
+CALL resetEmpNewBonus2(200);
+CALL resetEmpNewBonus2(400);
+SELECT * FROM Emp;
+
+#6
+SOURCE insert1.sql
+CALL insEmpDetails('200000','Sohail','H','Bakhshi','B02',50000);
+#7
+SOURCE insert2.sql
+#8
+source a.sql
+CALL numEmp('A00',@result);
+SELECT @result;
+
+#9
+
+SOURCE a2.sql
+CALL countNumEmp2('A00');
+SELECT @num;
+
+#10
+source q10.sql
+
+CALL doIterate(5);
+SELECT @x;
+
+#11
+
+source cursorList.sql
+
+CALL createProgList(@pList);
+SELECT @pList;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
