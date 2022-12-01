@@ -1,0 +1,47 @@
+USE dswork;
+
+INSERT INTO Student VALUES('12345007','James', 'Bond','0408007007');
+
+INSERT INTO Student VALUES('20605126','Sohail', 'Bakhshi','0408357607');
+
+INSERT INTO Student VALUES('12322007','Jack', 'Black','0408997007');
+
+INSERT INTO Student VALUES('11345007','Kevin', 'Rudd','0408007088');
+
+INSERT INTO Student VALUES('12985007','Steve', 'Jobs','0403007128');
+
+
+
+INSERT INTO Unit VALUES('ISYS1001','COMPUTING','Database Systems');
+INSERT INTO Unit VALUES('ISEC1000','COMPUTING','Cyber Security Concepts');
+INSERT INTO Unit VALUES('COMP1002','COMPUTING','Data Structures & Algorithms');
+INSERT INTO Unit VALUES('MATH1015','Math','Linear Algebra');
+INSERT INTO Unit VALUES('COMP1005','COMPUTING','Fundamentals of Programming');
+
+INSERT INTO Enrolment VALUES('ISYS1001','12345007','2022',NULL, NULL);
+INSERT INTO Enrolment VALUES('COMP1002','20605126','2022',99, 9);
+INSERT INTO Enrolment VALUES('COMP1002','12322007','2022',50, 5);
+INSERT INTO Enrolment VALUES('ISEC1000','11345007','2022',NULL, NULL);
+INSERT INTO Enrolment VALUES('COMP1002','12985007','2022',69, 6);
+
+SELECT firstname, phoneno FROM Student; 
+
+SELECT unitname, dept FROM Unit; 
+
+SELECT unit FROM Enrolment; 
+
+SELECT DISTINCT unit FROM Enrolment; 
+
+SELECT * FROM Unit where dept = 'COMPUTING'; 
+
+SELECT student, mark, grade from Enrolment where mark > 60;
+
+SELECT student, mark, grade from Enrolment where mark > 65 and mark < 85; 
+
+UPDATE Unit SET unitindex = 'ISYS2014' WHERE unitname = 'Database Systems';
+
+DELETE FROM Student WHERE sno = '12345007';
+
+DELETE FROM Unit WHERE unitindex = 'ISYS1001';
+
+

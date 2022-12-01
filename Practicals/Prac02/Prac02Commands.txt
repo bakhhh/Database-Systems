@@ -1,0 +1,43 @@
+mysql -u me -p
+USE dswork;
+
+\. create_tables.sql
+\. insdept.sql
+\. insemp.sql
+
+SELECT * FROM Emp
+pager less -SFX
+
+#3. Writing queries#
+
+#1
+SELECT lastname, workdept, salary FROM Emp WHERE salary >= 100000; 
+#2
+SELECT lastname, firstname, birthdate FROM Emp WHERE salary <90000;
+#3
+SELECT * FROM Dept WHERE mgrno is NULL;
+#4
+SELECT empno, lastname, workdept, phoneno FROM Emp WHERE workdept between 'D01' and 'E01';
+#5
+SELECT * FROM Dept WHERE deptname LIKE  '%Service%';
+#6
+SELECT empno, lastname, workdept FROM Emp WHERE workdept Like '%D21%' and salary < 60000;
+#7
+SELECT CONCAT(firstname,' ', midinit,' ', lastname) AS fullname, job FROM Emp;
+#8
+SELECT lastname, workdept, ROUND(salary/12) As salary FROM Emp WHERE workdept = 'BO1' OR workdept='C01' OR workdept='D11' OR workdept='E21';
+#9
+SELECT lastname, workdept, ROUND(salary/51.1786,2) As salary FROM Emp WHERE workdept = 'BO1' OR workdept='C01' OR workdept='E21';
+#10
+SELECT firstname, DATE_FORMAT(birthdate,'%W, %e %M %Y') As Birthdates FROM Emp WHERE job = 'Designer';
+#11
+SELECT empno, firstname, DATE_FORMAT(birthdate, '%e %M') As BirthDates, workdept FROM Emp WHERE workdept = 'B01' OR workdept = 'C01' OR workdept = 'D11' OR workdept = 'E21';
+#12
+SELECT empno, firstname, lastname, workdept, ROUND(salary+bonus+comm) As 'Total Income' FROM Emp WHERE workdept = 'B01' OR workdept = 'C01' OR workdept = 'E21';
+#13
+SELECT lastname,YEAR(CURDATE()) - DATE_FORMAT(birthdate, '%Y') As Age FROM Emp;
+
+
+
+
+
